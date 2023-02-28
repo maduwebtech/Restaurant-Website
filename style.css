@@ -1,0 +1,375 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+	overflow-x: hidden;
+}
+#navbar{
+	position: fixed;
+	top: 0;
+	width: 100vw;
+}
+#header{
+	background: rgb(0, 0, 0, 0.3);
+	display: flex;
+	justify-content: space-around;
+	height: 60px;
+	line-height: 60px;
+}
+#header ul{
+	display: flex;
+}
+#header ul li{
+	list-style: none;
+	padding: 0 15px 0 15px;
+}
+#header ul li a,#tel a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 1rem;
+	font-weight: bold;
+}
+#tel a{
+	background: orange;
+	padding: 3px 10px 3px 10px;
+}
+#header ul li:hover{
+	background-color: magenta;
+}
+#tel a:hover{
+	background-color: violet;
+}
+#brand{
+	font-family: cursive;
+	color: orange;
+	text-shadow: 1px 1px 1px #000;
+}
+/*End Navbar*/
+
+/*Hero section begin*/
+.hero{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.hero::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(images/hero.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	filter: brightness(30%);
+	background-attachment: fixed;
+}
+.hero_content{
+	position: relative;
+}
+.hero_content h1{
+	color: #fff;
+	font-size: 3rem;
+}
+.hero_content h2{
+	color: #fff;
+	font-size: 2rem;
+	font-family: cursive;
+	margin-top: 1rem;
+	margin-bottom: 4rem;
+}
+.hero_content a{
+	text-decoration: none;
+	background-color: rgb(0, 0, 0, 0.3);
+	padding: 3px 15px 3px 15px;
+	border: 1px solid magenta;
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #fff;
+}
+.hero_content a:hover{
+	background-color: orange;
+	color: #fff;
+}
+
+/*mobile menu begin*/
+#mobile_menu{
+	display: none;
+}
+#mobile_menu ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: magenta;
+}
+#mobile_menu ul li{
+	list-style: none;
+	padding: 10px;
+}
+#mobile_menu ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+#mobile_menu li:hover{
+	background-color: #000;
+}
+/*mobile menu end*/
+
+/*Menu section begin*/
+#section{
+	text-align: center;
+	font-size: 2rem;
+	font-family: Verdana;
+	color: #000;
+	padding: 25px 0 25px 0;
+}
+#menu{
+	padding: 25px 0 25px 0;
+}
+.menu_col{
+	background: #fff;
+	margin: 10px 0 10px 0;
+	padding: 10px;
+	border: 1px solid #bbb;
+	flex: 1;
+	box-shadow: 2px 2px 2px #bbb;
+}
+.menu_col h2{
+	background-color: red;
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
+	text-align: center;
+	font-family: cursive;
+	padding: 5px;
+}
+.box{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin: 5px;	
+}
+.box h3,h4{
+	font-weight: bold;
+	color: #292929;
+}
+#image{
+	width: 150px;
+	height: 150px;
+	border: 2px solid orange;
+	padding: 5px;
+	border-radius: 50%;
+}
+#image img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+}
+/*End Menu section*/
+
+/*Chef section begin*/
+#chef{
+	background: #fff;
+	padding: 25px 0 50px 0;
+}
+.chef_col .img{
+	width: 200px;
+	height: 250px;
+	margin: auto;
+}
+.chef_col img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+/*End chef section*/
+
+/*About section begin*/
+#about{
+	padding: 25px 0 50px 0;
+}
+.about_row,.contact_row,.chef_row,.menu_row{
+	display: flex;
+	align-items: center;
+	padding: 0 100px 0 100px;
+}
+.about_col,.contact_col,.chef_col,.menu_col{
+	margin: 10px;
+}
+.about_col h1,.contact_col h3{
+	font-family: cursive;
+}
+.about_col p{
+	font-weight: bold;
+	color: #292929;
+	text-align: justify;
+}
+.about_col #img{
+	width: 300px;
+	height: 300px;
+	margin: auto;
+	border-radius: 50%;
+}
+.about_col img{
+	border-radius: 50%;
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+}
+/*End about section*/
+
+/*contact section begin*/
+.about_col,.contact_col,.chef_col{
+	display: flex;
+	flex: 1 1;
+	flex-direction: column;
+	align-items: center;
+}
+#contact{
+	background-color: #fff;
+	padding: 25px 0 50px 0;
+}
+#contact form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: magenta;
+	border: 1px solid grey;
+	width: 70%;
+	padding: 20px 35px 20px 35px;
+}
+.contact_col h3,.contact_col p{
+	margin-top: 10px;
+	font-weight: bold;
+	color: #292929;
+}
+.social a{
+	margin: 3px;
+}
+.contact_col input:focus,.contact_col textarea:focus{
+	outline: none;
+	border-color: lime;
+}
+.contact_col a{
+	text-decoration: none;
+	color: #292929;
+}
+.social a i{
+	color: magenta;
+}
+.contact_col input{
+	height: 16pt;
+	background: #fff;
+	border: 1px solid #eee;
+	width: 100%;
+	margin: 5px;
+	padding: 5px;
+}
+.contact_col textarea{
+	padding: 5px;
+	background: #fff;
+	border: 1px solid #eee;
+	width: 100%;
+	margin: 5px 5px 0 5px;
+}
+.contact_col button{
+	margin: 5px;
+	padding: 10px;
+	background: orange;
+	color: #fff;
+	border: 1px solid grey;
+	cursor: pointer;
+}
+.contact_col h2{
+	text-align: center;
+	font-family: cursive;
+}
+/*End contact section*/
+
+/*Footer*/
+.footer{
+	background: #292929;
+	padding: 20px;
+	position: relative;
+}
+#top a{
+	position: absolute;
+	bottom: 12px;
+	right: 12px;
+}
+.footer h5{
+	text-align: center;
+	color: orange;
+}
+.footer a{
+	color: #ddd;
+	text-decoration: none;
+}
+
+
+/*Media Queries*/
+@media screen and (max-width: 992px){
+	#navbar{
+		position: absolute;
+	}
+	#header ul{
+	display: none;
+	}
+	.hero_content h1{
+		font-size: 2.5rem;
+	}
+	.hero_content h2{
+		font-size: 1.5rem;
+	}
+	.hero_content a{
+		font-size: 1.2rem;
+	}
+	#mobile_menu{
+		display: block;
+	}
+	.about_row,.contact_row,.chef_row,.menu_row{
+	padding: 0 10px 0 10px;
+	flex-wrap: wrap;
+   }
+}
+@media screen and (max-width: 360px){
+	#header ul{
+		justify-content: center;
+	}
+	.hero_content h1{
+		font-size: 2rem;
+	}
+	#tel a{
+		padding: 3px 5px 3px 5px;
+		font-size: 0.9rem;
+	}
+	#header h1{
+		font-size: 1.3rem;
+	}
+	.about_col #img{
+		width: 220px;
+		height: 220px;
+	}
+	#contact form{
+		width: 90%;
+		padding: 20px;
+	}
+	#mobile_menu ul li{
+		padding: 10px 5px 10px 5px;
+	}
+	#mobile_menu ul li a{
+		font-size: 0.9rem;
+	}
+}
